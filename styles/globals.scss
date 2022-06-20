@@ -4,20 +4,39 @@
 // Variables
 @import "vars";
 
+// Styled components
+@import "Header";
+@import "Navbar";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: inherit;
   font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
 }
 
 html {
   font-size: 62.5%;
 }
 
-body,
-html {
+body {
   height: 100%;
-  font-size: $font-small;
+  font-size: $font-def;
+  font-weight: $weight-def;
+  font-family: $family-primary, sans-serif;
+  color: $color-dark;
+}
+
+[href] {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
