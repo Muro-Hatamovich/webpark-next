@@ -1,5 +1,6 @@
 .hero-highlights {
 	margin-top: 7.5rem;
+	margin-top: clamp(2em, 3vw, 7.5rem);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;

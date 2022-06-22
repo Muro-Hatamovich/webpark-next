@@ -1,7 +1,7 @@
 import { CustomBtn } from "../CustomBtn";
 
 export const HeroMain = () => (
-	<div className="hero-main">
+	<section className="hero-main">
 		<h1 className="hero-main__title">WebPark - Ваш надежный партнер</h1>
 
 		<p className="hero-main__paragraph">
@@ -16,5 +16,5 @@ export const HeroMain = () => (
 		<CustomBtn className="hero-main__consult-btn">
 			Получить консультацию
 		</CustomBtn>
-	</div>
+	</section>
 );

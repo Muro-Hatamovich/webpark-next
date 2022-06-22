@@ -20,7 +20,7 @@ export const Hero = () => (
 				</div>
 			</div>
 
-			<div className="row">
+			<div className="row row--2">
 				<HeroHighlights />
 			</div>
 		</div>
