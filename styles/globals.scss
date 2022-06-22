@@ -1,4 +1,3 @@
-// Google fonts
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 // Variables
@@ -23,6 +22,12 @@
 @import "Components/Services/ServicesMain";
 @import "Components/Services/ServicesList";
 @import "Components/Services/ServicesItem";
+@import "Components/Contacts/Contacts";
+@import "Components/Contacts/ContactsMain";
+@import "Components/Contacts/ContactsInfo";
+@import "Components/SocialNetwork/SocialNetwork";
+@import "Components/SignUp/SignUp";
+@import "Components/SignUp/SignUpField";
 
 * {
   margin: 0;
