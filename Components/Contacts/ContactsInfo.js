@@ -5,7 +5,7 @@ import { SiGooglemessages } from "react-icons/si";
 export const ContactsInfo = () => (
 	<div className="contcts-info">
 		<a className="contacts-info__link" href="tel:+998994395221">
-			<BsPhone class="contacts-info__icon" />
+			<BsPhone className="contacts-info__icon" />
 			<span className="contacts-info__text">+998 (99) 439-52-21</span>
 		</a>
 
