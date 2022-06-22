@@ -1,0 +1,23 @@
+.hero {
+	.row {
+		&--1 {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		@media screen and (max-width: 760px) {
+			flex-wrap: wrap;
+			flex-direction: column-reverse;
+		}
+	}
+
+	&__image {
+		width: 40%;
+
+		@media screen and (max-width: 760px) {
+			margin-bottom: 50px;
+			width: 100%;
+		}
+	}
+}

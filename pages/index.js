@@ -1,2 +1,9 @@
-const Home = () => <h1>Hello, World</h1>;
+import { Fragment } from "react";
+import Hero from "../Components/Hero";
+
+const Home = () => (
+	<Fragment>
+		<Hero />
+	</Fragment>
+);
 export default Home;
