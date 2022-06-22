@@ -12,6 +12,7 @@ export const Header = () => {
 						alt="Официальный логотип WEBPARK"
 						width={175}
 						height={40}
+						layout="responsive"
 					/>
 
 					<Navbar />
