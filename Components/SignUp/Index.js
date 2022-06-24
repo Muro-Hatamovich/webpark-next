@@ -1,8 +1,13 @@
 import { SignUpField } from "./SignUpField";
 import { useFormik } from "formik";
 import { schema } from "../../validation/sign-up-validation";
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
 
 const SignUp = () => {
+	const [loading, setLoading] = useState(false);
+	const [success, setSuccess] = useState(null);
+
 	const formik = useFormik({
 		initialValues: {
 			name: "",
@@ -10,20 +15,36 @@ const SignUp = () => {
 			phone: "",
 		},
 		validationSchema: schema,
-		onSubmit: (values) => {
-			alert(JSON.stringify(values, null, 2));
+		onSubmit: async (values) => {
+			setLoading(true);
+
+			try {
+				const response = await emailjs.send(
+					"service_vkhvkbo",
+					"template_m74e181",
+					values,
+					"R1fJOR4mt21R2AImZ"
+				);
+
+				if (!response.status == 200) {
+					setSuccess(await response);
+					setLoading(false);
+
+					return;
+				}
+
+				setSuccess(true);
+				setLoading(false);
+			} catch (err) {
+				setSuccess(false);
+				setLoading(false);
+			}
 		},
 	});
 
-<<<<<<< HEAD
-		<SignUpField label="Ваше имя" name="name" />
-		<SignUpField label="Ваша электронная почта" name="email" />
-		<SignUpField label="Ваш номер телефона" name="phone" />
-=======
 	return (
 		<form className="sign-up" onSubmit={formik.handleSubmit}>
 			<h2 className="sign-up__title">Обратная связь</h2>
->>>>>>> 505c7e65e08c05e8fbfb40ed2be0ad473221b425
 
 			<SignUpField
 				label="*Ваше имя"
@@ -51,7 +72,6 @@ const SignUp = () => {
 				onBlur={formik.handleBlur}
 				touched={formik.touched}
 				errors={formik.errors}
-				phone={true}
 			/>
 
 			<input
@@ -59,6 +79,31 @@ const SignUp = () => {
 				type="submit"
 				value="Отправить"
 			/>
+
+			{success === true && (
+				<div className="submit-status">
+					<h3 className="submit-status__title success">
+						Сообщение успешно отправлено
+					</h3>
+					<p className="submit-status__para">
+						Благодарим вас за обращение к нам, в скором времени наши
+						специалисты свяжутся с вами.
+					</p>
+				</div>
+			)}
+
+			{success === false && (
+				<div className="submit-status">
+					<h3 className="submit-status__title failed">
+						Не удалось отправить сообщение
+					</h3>
+					<p className="submit-status__para">
+						По неизвестным причинам не удалось отправить ваше
+						сообщение, это может быть связано с техническими
+						неполадками, попробуйте отправить сообщениеv позже.
+					</p>
+				</div>
+			)}
 		</form>
 	);
 };

@@ -1,13 +1,13 @@
 import NumberFormat from "react-number-format";
 
 export const SignUpField = ({ label, ...props }) => {
-	const { touched, errors, name, phone } = props;
+	const { touched, errors, name } = props;
 
 	return (
 		<div className="sign-up-field">
 			<label className="sign-up-field__label">{label}</label>
 
-			{phone === true ? (
+			{name === "phone" ? (
 				<NumberFormat
 					className="sign-up-field__input"
 					type="text"

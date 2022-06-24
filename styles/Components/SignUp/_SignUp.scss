@@ -11,4 +11,27 @@
 		font-size: clamp(2.2rem, 3vw, 2.6rem);
 		margin-bottom: 1.5rem;
 	}
+
+	// Submit Status
+	.submit-status {
+		margin-top: 30px;
+
+		&__title {
+			line-height: 1.5;
+			margin-bottom: 5px;
+
+			&.success {
+				color: green;
+			}
+
+			&.failed {
+				color: red;
+			}
+		}
+
+		&__para {
+			font-size: 14px;
+			line-height: 1.5;
+		}
+	}
 }
