@@ -1,9 +1,9 @@
 import { Fragment } from "react";
-import Hero from "../Components/Hero";
-import Intro from "../Components/Intro";
-import Partners from "../Components/Partners";
-import Services from "../Components/Services";
-import Layout from "../Components/Layout";
+import Hero from "../components/Hero";
+import Intro from "../components/Intro";
+import Partners from "../components/Partners";
+import Services from "../components/Services";
+import Layout from "../components/Layout";
 import { DataContext } from "../store/DataContext";
 
 const Home = ({ config }) => (
