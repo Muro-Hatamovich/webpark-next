@@ -5,7 +5,8 @@ import { BsTelegram } from "react-icons/bs";
 const SocialNetwork = () => (
 	<div className="social-network">
 		<a
-			className="social-network__item instagram"
+			className="social-network__item telegram"
+			href="https://t.me/webpark_uz"
 			target="_blank"
 			rel="noreferrer"
 		>
@@ -14,6 +15,7 @@ const SocialNetwork = () => (
 
 		<a
 			className="social-network__item instagram"
+			href="https://www.instagram.com/webpark_uz/"
 			target="_blank"
 			rel="noreferrer"
 		>
@@ -21,7 +23,8 @@ const SocialNetwork = () => (
 		</a>
 
 		<a
-			className="social-network__item instagram"
+			className="social-network__item facebook"
+			href="https://www.facebook.com/webpark.uz/"
 			target="_blank"
 			rel="noreferrer"
 		>

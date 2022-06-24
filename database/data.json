@@ -2,8 +2,8 @@
 	"ru": {
 		"header": {
 			"logo": {
-				"src": "/images/logo.png",
-				"alt": "Логотип компании WEBPARK MCHJ"
+				"src": "/images/site/logo.png",
+				"alt": "Официальный логотип WEBPARK"
 			},
 			"nav": [
 				{
