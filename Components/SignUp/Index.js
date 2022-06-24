@@ -2,11 +2,16 @@ import { SignUpField } from "./SignUpField";
 import { useFormik } from "formik";
 import { schema } from "../../validation/sign-up-validation";
 import emailjs from "@emailjs/browser";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const SignUp = () => {
 	const [loading, setLoading] = useState(false);
 	const [success, setSuccess] = useState(null);
+
+	const disableMessage = (time) =>
+		setTimeout(() => {
+			setSuccess(null);
+		}, time);
 
 	const formik = useFormik({
 		initialValues: {
@@ -26,18 +31,23 @@ const SignUp = () => {
 					"R1fJOR4mt21R2AImZ"
 				);
 
-				if (!response.status == 200) {
+				if (!(await response.status) == 200) {
 					setSuccess(await response);
 					setLoading(false);
+					formik.resetForm();
 
+					disableMessage(6000);
 					return;
 				}
 
 				setSuccess(true);
 				setLoading(false);
+				formik.resetForm();
+				disableMessage(6000);
 			} catch (err) {
 				setSuccess(false);
 				setLoading(false);
+				disableMessage(6000);
 			}
 		},
 	});
@@ -75,9 +85,10 @@ const SignUp = () => {
 			/>
 
 			<input
-				className="sign-up__submit btn"
+				className={`sign-up__submit btn ${loading ? "loading" : ""}`}
 				type="submit"
-				value="Отправить"
+				value={loading ? "Отправляется..." : "Отправить"}
+				disabled={loading}
 			/>
 
 			{success === true && (
