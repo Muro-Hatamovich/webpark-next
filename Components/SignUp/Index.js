@@ -4,7 +4,7 @@ import { schema } from "../../validation/sign-up-validation";
 import emailjs from "@emailjs/browser";
 import { useState, useEffect } from "react";
 
-const SignUp = () => {
+const SignUp = ({ config }) => {
 	const [loading, setLoading] = useState(false);
 	const [success, setSuccess] = useState(null);
 
@@ -25,10 +25,10 @@ const SignUp = () => {
 
 			try {
 				const response = await emailjs.send(
-					"service_vkhvkbo",
+					config.service_id,
 					"template_m74e181",
 					values,
-					"R1fJOR4mt21R2AImZ"
+					config.access_token
 				);
 
 				if (!(await response.status) == 200) {

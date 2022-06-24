@@ -12,6 +12,12 @@
 		margin-bottom: 1.5rem;
 	}
 
+	&__submit {
+		&.loading {
+			opacity: 0.75;
+		}
+	}
+
 	// Submit Status
 	.submit-status {
 		margin-top: 30px;

@@ -1,13 +1,14 @@
 import { Fragment } from "react";
 import { Header } from "./Header";
+import { Footer } from "./Footer";
 
-const Layout = ({ children }) => (
+const Layout = ({ children, config }) => (
 	<Fragment>
 		<Header />
 
 		<main>{children}</main>
 
-		<footer />
+		<Footer config={config} />
 	</Fragment>
 );
 
