@@ -5,7 +5,7 @@ import { DataContext } from "../../store/DataContext";
 import { useContext } from "react";
 
 const Contacts = () => {
-	const { config } = useContext(DataContext);
+	const config = useContext(DataContext);
 
 	return (
 		<Section className="contacts">
