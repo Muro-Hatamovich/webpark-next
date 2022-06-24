@@ -21,4 +21,9 @@
 		padding: 5px 0;
 		background: transparent;
 	}
+
+	&__error {
+		color: red;
+		margin-top: 0.2rem;
+	}
 }
