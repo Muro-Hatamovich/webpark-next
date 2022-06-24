@@ -5,7 +5,7 @@ import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 
-export const Slider = ({ children }) => (
+const Slider = ({ children }) => (
 	<Swiper
 		modules={[Autoplay, Pagination]}
 		spaceBetween={170}
@@ -39,3 +39,5 @@ export const Slider = ({ children }) => (
 		{children}
 	</Swiper>
 );
+
+export default Slider;

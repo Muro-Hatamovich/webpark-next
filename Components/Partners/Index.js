@@ -1,5 +1,5 @@
-import { Section } from "../Layout/Section";
-import { PartnersList } from "./PartnersList";
+import Section from "../Layout/Section";
+import PartnersList from "./PartnersList";
 
 const Partners = () => (
 	<Section className="partners">

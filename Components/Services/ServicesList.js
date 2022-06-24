@@ -1,4 +1,4 @@
-import { ServicesItem } from "./ServicesItem";
+import ServicesItem from "./ServicesItem";
 
 const DUMMY_SERVICES = [
 	{
@@ -35,10 +35,12 @@ const DUMMY_SERVICES = [
 	},
 ];
 
-export const ServicesList = () => (
+const ServicesList = () => (
 	<div className="services-list">
 		{DUMMY_SERVICES.map((service) => (
 			<ServicesItem key={service.id} {...service} />
 		))}
 	</div>
 );
+
+export default ServicesList;

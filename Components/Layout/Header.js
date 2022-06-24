@@ -1,8 +1,8 @@
-import { Navbar } from "./Navbar";
-import { Logo } from "../Logo";
-import { Wrapper } from "./Wrapper";
+import Navbar from "./Navbar";
+import Logo from "../Logo";
+import Wrapper from "./Wrapper";
 
-export const Header = ({ logo, nav }) => {
+const Header = () => {
 	return (
 		<header className="header">
 			<Wrapper>
@@ -21,3 +21,5 @@ export const Header = ({ logo, nav }) => {
 		</header>
 	);
 };
+
+export default Header;

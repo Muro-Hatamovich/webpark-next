@@ -1,6 +1,6 @@
-import { CustomBtn } from "../CustomBtn";
+import CustomBtn from "../CustomBtn";
 
-export const ServicesMain = () => (
+const ServicesMain = () => (
 	<section className="services-main">
 		<h2 className="services-main__title">Наши услуги</h2>
 
@@ -13,3 +13,5 @@ export const ServicesMain = () => (
 		<CustomBtn className="services-main__btn">Заказать услугу</CustomBtn>
 	</section>
 );
+
+export default ServicesMain;

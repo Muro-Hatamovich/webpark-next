@@ -1,6 +1,6 @@
 import * as Yup from "yup";
 
-export const schema = Yup.object({
+const schema = Yup.object({
 	name: Yup.string()
 		.max(50, "Разрешается использовать максимум 50 символов")
 		.required("Пожалуйста, укажите ваше имя"),
@@ -12,3 +12,5 @@ export const schema = Yup.object({
 		)
 		.required("Пожалуйста введите номер телефона"),
 });
+
+export default schema;

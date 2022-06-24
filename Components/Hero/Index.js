@@ -1,6 +1,6 @@
-import { Section } from "../Layout/Section";
-import { HeroMain } from "./HeroMain";
-import { HeroHighlights } from "./HeroHighlights";
+import Section from "../Layout/Section";
+import HeroMain from "./HeroMain";
+import HeroHighlights from "./HeroHighlights";
 import Image from "next/image";
 
 const Hero = () => (

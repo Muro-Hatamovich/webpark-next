@@ -1,6 +1,6 @@
 import NumberFormat from "react-number-format";
 
-export const SignUpField = ({ label, ...props }) => {
+const SignUpField = ({ label, ...props }) => {
 	const { touched, errors, name } = props;
 
 	return (
@@ -26,3 +26,5 @@ export const SignUpField = ({ label, ...props }) => {
 		</div>
 	);
 };
+
+export default SignUpField;

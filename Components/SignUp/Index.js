@@ -1,6 +1,6 @@
-import { SignUpField } from "./SignUpField";
+import SignUpField from "./SignUpField";
 import { useFormik } from "formik";
-import { schema } from "../../validation/sign-up-validation";
+import schema from "../../validation/sign-up-validation";
 import emailjs from "@emailjs/browser";
 import { useState, useEffect } from "react";
 

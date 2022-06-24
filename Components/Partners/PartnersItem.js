@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const PartnersItem = ({ image }) => (
+const PartnersItem = ({ image }) => (
 	<div className="partners-item">
 		<div className="partners-item__image">
 			<Image
@@ -14,3 +14,5 @@ export const PartnersItem = ({ image }) => (
 		</div>
 	</div>
 );
+
+export default PartnersItem;

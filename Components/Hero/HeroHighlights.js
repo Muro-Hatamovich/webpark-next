@@ -1,4 +1,4 @@
-export const HeroHighlights = () => (
+const HeroHighlights = () => (
 	<div className="hero-highlights">
 		<div className="hero-highlights__box">
 			<h3 className="hero-highlights__title">Стабильный поток</h3>
@@ -34,3 +34,5 @@ export const HeroHighlights = () => (
 		</div>
 	</div>
 );
+
+export default HeroHighlights;

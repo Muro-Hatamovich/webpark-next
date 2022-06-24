@@ -1,6 +1,6 @@
-import { Section } from "../Layout/Section";
-import { ServicesMain } from "./ServicesMain";
-import { ServicesList } from "./ServicesList";
+import Section from "../Layout/Section";
+import ServicesMain from "./ServicesMain";
+import ServicesList from "./ServicesList";
 
 const Services = () => (
 	<Section className="services">

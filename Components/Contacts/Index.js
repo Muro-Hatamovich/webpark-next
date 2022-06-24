@@ -1,5 +1,5 @@
-import { Section } from "../Layout/Section";
-import { ContactsMain } from "./ContactsMain";
+import Section from "../Layout/Section";
+import ContactsMain from "./ContactsMain";
 import Image from "next/image";
 import { DataContext } from "../../store/DataContext";
 import { useContext } from "react";

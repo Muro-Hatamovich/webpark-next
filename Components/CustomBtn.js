@@ -1,4 +1,4 @@
-export const CustomBtn = ({ children, className, link = false }) =>
+const CustomBtn = ({ children, className, link = false }) =>
 	!link ? (
 		<button className={`btn ${className ? className : ""}`}>
 			{children}
@@ -13,3 +13,5 @@ export const CustomBtn = ({ children, className, link = false }) =>
 			{children}
 		</a>
 	);
+
+export default CustomBtn;

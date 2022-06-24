@@ -1,5 +1,5 @@
-import { Section } from "../Layout/Section";
-import { IntroMain } from "./IntroMain";
+import Section from "../Layout/Section";
+import IntroMain from "./IntroMain";
 import Image from "next/image";
 
 const Intro = () => (

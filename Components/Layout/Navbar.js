@@ -1,6 +1,6 @@
-import { CustomLink } from "../CustomLink";
+import CustomLink from "../CustomLink";
 
-export const Navbar = () => (
+const Navbar = () => (
 	<nav className="navbar">
 		<CustomLink className="navbar__link" href="/">
 			главная
@@ -16,3 +16,5 @@ export const Navbar = () => (
 		</CustomLink>
 	</nav>
 );
+
+export default Navbar;

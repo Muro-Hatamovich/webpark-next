@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const Logo = ({ src, alt, width, height, layout, className }) => (
+const Logo = ({ src, alt, width, height, layout, className }) => (
 	<div className={`logo ${className ? $className : ""}`}>
 		<Image
 			src={src}
@@ -11,3 +11,5 @@ export const Logo = ({ src, alt, width, height, layout, className }) => (
 		/>
 	</div>
 );
+
+export default Logo;

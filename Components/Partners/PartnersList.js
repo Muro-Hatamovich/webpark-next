@@ -1,5 +1,5 @@
-import { PartnersItem } from "./PartnersItem";
-import { Slider } from "../Slider";
+import PartnersItem from "./PartnersItem";
+import Slider from "../Slider";
 import { SwiperSlide } from "swiper/react";
 
 const DUMMY_CLIENTS = [
@@ -40,7 +40,7 @@ const DUMMY_CLIENTS = [
 	},
 ];
 
-export const PartnersList = () => (
+const PartnersList = () => (
 	<div className="partners-list">
 		<Slider>
 			{DUMMY_CLIENTS.map((client) => (
@@ -51,3 +51,5 @@ export const PartnersList = () => (
 		</Slider>
 	</div>
 );
+
+export default PartnersList;

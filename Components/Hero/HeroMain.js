@@ -1,6 +1,6 @@
-import { CustomBtn } from "../CustomBtn";
+import CustomBtn from "../CustomBtn";
 
-export const HeroMain = () => (
+const HeroMain = () => (
 	<section className="hero-main">
 		<h1 className="hero-main__title">WebPark - Ваш надежный партнер</h1>
 
@@ -18,3 +18,5 @@ export const HeroMain = () => (
 		</CustomBtn>
 	</section>
 );
+
+export default HeroMain;

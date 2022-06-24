@@ -1,4 +1,4 @@
-export const IntroMain = () => (
+const IntroMain = () => (
 	<section className="intro-main">
 		<h2 className="intro-main__title">Немного о WebPark</h2>
 
@@ -14,3 +14,5 @@ export const IntroMain = () => (
 		</p>
 	</section>
 );
+
+export default IntroMain;

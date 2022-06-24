@@ -2,7 +2,7 @@ import { BsPhone } from "react-icons/bs";
 import { BsTelephoneForward } from "react-icons/bs";
 import { SiGooglemessages } from "react-icons/si";
 
-export const ContactsInfo = () => (
+const ContactsInfo = () => (
 	<div className="contcts-info">
 		<a className="contacts-info__link" href="tel:+998994395221">
 			<BsPhone className="contacts-info__icon" />
@@ -25,3 +25,5 @@ export const ContactsInfo = () => (
 		</address>
 	</div>
 );
+
+export default ContactsInfo;

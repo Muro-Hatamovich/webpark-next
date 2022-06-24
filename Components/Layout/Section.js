@@ -1,8 +1,10 @@
-import { Wrapper } from "./Wrapper";
+import Wrapper from "./Wrapper";
 
-export const Section = ({ children, className }) =>
+const Section = ({ children, className }) =>
 	className && (
 		<div className={className}>
 			<Wrapper>{children}</Wrapper>
 		</div>
 	);
+
+export default Section;
