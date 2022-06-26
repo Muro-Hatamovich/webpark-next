@@ -1,0 +1,34 @@
+{
+	"logo": {
+		"src": "logo.png",
+		"alt": "Логотип WebPark"
+	},
+
+	"navigation": [
+		{
+			"id": 1,
+			"render": "главная",
+			"link": "hero"
+		},
+		{
+			"id": 2,
+			"render": "о нас",
+			"link": "intro"
+		},
+		{
+			"id": 3,
+			"render": "услуги",
+			"link": "services"
+		},
+		{
+			"id": 4,
+			"render": "наши клиенты",
+			"link": "partners"
+		},
+		{
+			"id": 5,
+			"render": "контакты",
+			"link": "contacts"
+		}
+	]
+}

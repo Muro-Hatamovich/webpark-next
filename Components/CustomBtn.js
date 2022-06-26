@@ -5,10 +5,10 @@ const CustomBtn = ({ children, className, link = false }) =>
 		</button>
 	) : (
 		<a
+			className={`btn ${className}`}
 			href={link.href}
 			target="_blank"
 			rel="noreferrer"
-			className={`btn ${className}`}
 		>
 			{children}
 		</a>

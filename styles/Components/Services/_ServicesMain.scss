@@ -12,6 +12,11 @@
 		border-right: 0;
 	}
 
+	@media screen and (max-width: 760px) {
+		text-align: center;
+		padding-right: 0;
+	}
+
 	&__title {
 		margin-bottom: 3rem;
 		margin-bottom: clamp(1.5rem, 2vw, 2rem);

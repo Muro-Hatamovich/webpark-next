@@ -1,0 +1,17 @@
+[
+	{
+		"id": 1,
+		"name": "instagram",
+		"link": "https://www.instagram.com/webpark_uz/"
+	},
+	{
+		"id": 2,
+		"name": "facebook",
+		"link": "https://www.facebook.com/webpark.uz/"
+	},
+	{
+		"id": 3,
+		"name": "telegram",
+		"link": "https://t.me/webpark_uz"
+	}
+]

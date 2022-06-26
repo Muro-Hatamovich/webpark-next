@@ -10,7 +10,14 @@ const ServicesMain = () => (
 			индивидуальный вариант.
 		</p>
 
-		<CustomBtn className="services-main__btn">Заказать услугу</CustomBtn>
+		<CustomBtn
+			className="services-main__btn"
+			link={{
+				href: "https://t.me/webpark_uz",
+			}}
+		>
+			Заказать услугу
+		</CustomBtn>
 	</section>
 );
 

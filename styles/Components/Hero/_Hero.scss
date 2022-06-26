@@ -1,4 +1,8 @@
 .hero {
+	@media screen and (max-width: 950px) {
+		padding-top: 5.5rem;
+	}
+
 	.row {
 		&--1 {
 			display: flex;

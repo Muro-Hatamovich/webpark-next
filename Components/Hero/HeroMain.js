@@ -13,7 +13,12 @@ const HeroMain = () => (
 			разработки эффективных сайтов.
 		</p>
 
-		<CustomBtn className="hero-main__consult-btn">
+		<CustomBtn
+			className="hero-main__consult-btn"
+			link={{
+				href: "https://t.me/webpark_uz",
+			}}
+		>
 			Получить консультацию
 		</CustomBtn>
 	</section>

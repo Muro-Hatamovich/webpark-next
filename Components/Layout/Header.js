@@ -1,10 +1,14 @@
 import Navbar from "./Navbar";
 import Logo from "../Logo";
 import Wrapper from "./Wrapper";
+import { Sling as Hamburger } from "hamburger-react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
+	const [isOpen, setIsOpen] = useState(false);
+
 	return (
-		<header className="header">
+		<header className={`header`}>
 			<Wrapper>
 				<div className="header__content">
 					<Logo
@@ -15,7 +19,14 @@ const Header = () => {
 						layout="responsive"
 					/>
 
-					<Navbar />
+					<Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
+
+					<Hamburger
+						toggled={isOpen}
+						toggle={setIsOpen}
+						size={35}
+						hideOutline={true}
+					/>
 				</div>
 			</Wrapper>
 		</header>
