@@ -17,7 +17,7 @@ const Home = ({ config }) => (
 	</DataContext.Provider>
 );
 
-export const getStaticProps = async () => {
+export const getStaticProps = async (props) => {
 	return {
 		props: {
 			config: {

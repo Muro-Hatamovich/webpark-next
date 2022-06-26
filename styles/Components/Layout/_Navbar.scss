@@ -12,9 +12,27 @@
 		margin-right: 5rem;
 		padding-bottom: 0.5rem;
 		position: relative;
+		cursor: pointer;
 
 		&:last-child {
 			margin-right: 0;
+		}
+
+		&.scroll-top {
+			position: fixed;
+			bottom: 5vw;
+			right: 6.5rem;
+			font-size: 5rem;
+			color: #ccc;
+			transition: 400ms ease-in-out;
+
+			&:hover {
+				color: $color-primary;
+			}
+
+			&::after {
+				display: none;
+			}
 		}
 
 		&::after {

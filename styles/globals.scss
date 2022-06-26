@@ -53,7 +53,8 @@ body {
   line-height: 1.5;
 }
 
-[href] {
+[href],
+[to] {
   text-decoration: none;
   cursor: pointer;
 }
