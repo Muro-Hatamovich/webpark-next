@@ -1,6 +1,6 @@
 {
-  "name": "webpark",
-  "version": "0.1.0",
+  "name": "Offical website of WEBPARK MCHJ build with nextjs",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "node server.js",
