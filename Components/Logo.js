@@ -1,14 +1,8 @@
 import Image from "next/image";
 
-const Logo = ({ src, alt, width, height, layout, className }) => (
+const Logo = ({ src, alt, layout, className }) => (
 	<div className={`logo ${className ? $className : ""}`}>
-		<Image
-			src={src}
-			alt={alt}
-			width={width}
-			height={height}
-			layout={layout}
-		/>
+		<Image src={src} alt={alt} width={175} height={40} layout={layout} />
 	</div>
 );
 

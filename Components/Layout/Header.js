@@ -13,9 +13,7 @@ const Header = () => {
 				<div className="header__content">
 					<Logo
 						src={`/images/site/logo.png`}
-						alt=""
-						width={175}
-						height={40}
+						alt="Логотип компании"
 						layout="responsive"
 					/>
 
